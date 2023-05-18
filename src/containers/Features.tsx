@@ -1,11 +1,11 @@
 import Feature, { FeatureData } from "@/components/Feature";
 import styles from "@/styles/Features.module.scss";
-import shopify from "@/assets/icon-shopify.png";
-import whatsappApi from "@/assets/icon-whatsapp-api.png";
-import cart from "@/assets/icon-cart.png";
-import review from "@/assets/icon-review-bubble.png";
-import multimedia from "@/assets/icon-review-multimedia.png";
-import apps from "@/assets/icon-review-apps.png";
+import shopify from "../assets/icon-shopify.png";
+import whatsappApi from "../assets/icon-whatsapp-api.png";
+import cart from "../assets/icon-cart.png";
+import review from "../assets/icon-review-bubble.png";
+import multimedia from "../assets/icon-review-multimedia.png";
+import apps from "../assets/icon-review-apps.png";
 
 const featuresData: Array<FeatureData> = [
   {

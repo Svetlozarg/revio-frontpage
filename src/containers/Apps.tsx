@@ -1,9 +1,9 @@
 import styles from "@/styles/Apps.module.scss";
-import yotpo from "@/assets/yotpo.png";
-import judgeme from "@/assets/judgeme.png";
-import stamped from "@/assets/stamped.png";
-import loox from "@/assets/loox.png";
-import star from "@/assets/star.png";
+import yotpo from "../assets/yotpo.png";
+import judgeme from "../assets/judgeme.png";
+import stamped from "../assets/stamped.png";
+import loox from "../assets/loox.png";
+import star from "../assets/star.png";
 import Image from "next/image";
 
 export default function Apps() {

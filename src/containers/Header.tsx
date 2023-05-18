@@ -1,5 +1,5 @@
 import styles from "@/styles/Header.module.scss";
-import logo from "@/assets/revio-logo.png";
+import logo from "../assets/revio-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 

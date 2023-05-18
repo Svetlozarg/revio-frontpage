@@ -1,6 +1,6 @@
 import styles from "@/styles/CTA.module.scss";
 import Image from "next/image";
-import man from "@/assets/man.png";
+import man from "../assets/man.png";
 import Input from "@/components/Input";
 
 export default function CTA() {

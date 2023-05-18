@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import Layout from "@/containers/Layout";
 import Head from "next/head";
-import benefit1 from "@/assets/benefit1.png";
-import benefit2 from "@/assets/benefit2.png";
-import benefit3 from "@/assets/benefit3.png";
-import benefit4 from "@/assets/benefit4.png";
+import benefit1 from "../assets/benefit1.png";
+import benefit2 from "../assets/benefit2.png";
+import benefit3 from "../assets/benefit3.png";
+import benefit4 from "../assets/benefit4.png";
 import Benefit, { BenefitData } from "@/components/Benefit";
 import Features from "@/containers/Features";
 import FAQ from "@/containers/FAQ";
