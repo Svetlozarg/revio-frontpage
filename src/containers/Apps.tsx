@@ -1,9 +1,4 @@
 import styles from "@/styles/Apps.module.scss";
-import yotpo from "../../public/assets/yotpo.png";
-import judgeme from "../../public/assets/judgeme.png";
-import stamped from "../../public/assets/stamped.png";
-import loox from "../../public/assets/loox.png";
-import star from "../../public/assets/star.png";
 import Image from "next/image";
 
 export default function Apps() {
@@ -12,11 +7,26 @@ export default function Apps() {
       <h2 data-aos="fade-up">Integrate into your existing reviews app</h2>
 
       <div data-aos="fade-up">
-        <Image src={yotpo} alt="app image" />
-        <Image src={judgeme} alt="app image" />
-        <Image src={stamped} alt="app image" />
-        <Image src={loox} alt="app image" />
-        <Image src={star} alt="app image" />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/yotpo_LdrSRBdzQ.png?updatedAt=1684448816731"
+          alt="app image"
+        />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/judgeme_zQLhnKdkz.png?updatedAt=1684448815378"
+          alt="app image"
+        />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/stamped_ow0xgsrs3.png?updatedAt=1684448816502"
+          alt="app image"
+        />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/loox_CP4qjhpRy.png?updatedAt=1684448815438"
+          alt="app image"
+        />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/star_y6fVnHX6l.png?updatedAt=1684448816541"
+          alt="app image"
+        />
       </div>
     </section>
   );

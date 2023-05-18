@@ -1,7 +1,5 @@
 import { useState } from "react";
 import styles from "@/styles/Question.module.scss";
-import plus from "../../public/assets/plus.png";
-import minus from "../../public/assets/minus.png";
 import Image from "next/image";
 
 export interface QuestionData {
@@ -18,7 +16,11 @@ export default function Question(props: QuestionData) {
       <div className={styles.question}>
         <h4>{question}</h4>
         <Image
-          src={showAnswer ? minus : plus}
+          src={
+            showAnswer
+              ? "https://ik.imagekit.io/obelussoft/Revio/minus_Pqvr4JhfI7.png?updatedAt=1684448815575"
+              : "https://ik.imagekit.io/obelussoft/Revio/plus_MRHTpIWCj.png?updatedAt=1684448816307"
+          }
           alt="plus image"
           onClick={() => setShowAnswer(!showAnswer)}
         />

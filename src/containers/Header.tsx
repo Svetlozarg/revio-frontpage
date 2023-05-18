@@ -1,5 +1,4 @@
 import styles from "@/styles/Header.module.scss";
-import logo from "../../public/assets/revio-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +19,11 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <Image src={logo} alt="Revio Logo" className={styles.logo} />
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/revio-logo_caDsNMNPw.png?updatedAt=1684448816397"
+          alt="Revio Logo"
+          className={styles.logo}
+        />
       </Link>
 
       <nav className={styles.nav}>

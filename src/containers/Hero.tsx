@@ -1,6 +1,5 @@
 import styles from "@/styles/Hero.module.scss";
 import Image from "next/image";
-import heroImg from "../../public/assets/hero-img.png";
 import Input from "@/components/Input";
 
 export default function Hero() {
@@ -22,7 +21,7 @@ export default function Hero() {
         <Input />
       </div>
       <Image
-        src={heroImg}
+        src="https://ik.imagekit.io/obelussoft/Revio/hero-img_9uOFofvjEs.png?updatedAt=1684448815005"
         className={styles.heroImg}
         alt="Hero Image"
         data-aos="fade-left"
