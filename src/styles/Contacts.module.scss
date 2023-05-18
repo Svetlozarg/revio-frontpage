@@ -1,0 +1,137 @@
+.contacts {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  background-color: #fff;
+
+  @media (max-width: 1150px) {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  @media (max-width: 880px) {
+    padding-top: 140px;
+  }
+
+  @media (max-width: 682px) {
+    padding-top: 170px;
+  }
+
+  @media (max-width: 479px) {
+    padding-top: 80px;
+  }
+
+  .contactsWrapper {
+    width: 100%;
+    max-width: 1800px;
+    border-radius: 10px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .contactsBox {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      form {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 2rem;
+
+        input {
+          width: 100%;
+          padding: 0.5rem;
+          outline: none;
+          border: 1px solid #000;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+        }
+
+        textarea {
+          width: 100%;
+          padding: 0.5rem;
+          outline: none;
+          border: 1px solid #000;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        button {
+          width: 100%;
+          max-width: 150px;
+          outline: none;
+          border: 2px solid transparent;
+          transition: 250ms ease-in-out;
+          background-color: var(--green);
+          color: #fff;
+          font-size: 1.2rem;
+          border-radius: 10px;
+          padding: 0.4rem 1rem;
+          cursor: pointer;
+
+          &:hover {
+            border: 2px solid var(--green);
+            background-color: transparent;
+            color: var(--green);
+          }
+        }
+      }
+
+      .socialBox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+
+        p {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+
+          &:hover {
+            color: var(--green);
+          }
+        }
+
+        svg {
+          color: var(--green);
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

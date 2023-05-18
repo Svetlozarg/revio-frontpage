@@ -1,0 +1,50 @@
+.questionBox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .question {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border: 2px solid;
+    border-image: linear-gradient(
+        180deg,
+        rgba(253, 185, 18, 1) 0%,
+        rgba(90, 185, 89, 1) 100%
+      )
+      1;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .answer {
+    width: 100%;
+    max-width: 1550px;
+    height: auto;
+    background-color: var(--grey);
+    padding: 2rem;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+  }
+}

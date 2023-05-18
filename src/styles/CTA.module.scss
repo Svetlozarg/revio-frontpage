@@ -1,0 +1,52 @@
+.cta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-image: url(../assets/ctaBg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 4rem 1rem 0rem 1rem;
+
+  @media (max-width: 1113px) {
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 3rem;
+
+    @media (max-width: 1600px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 1350px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
+  }
+
+  .ctaSpan {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--green);
+  }
+
+  img {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+  }
+}

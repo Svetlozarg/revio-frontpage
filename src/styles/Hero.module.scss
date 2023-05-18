@@ -1,0 +1,95 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+
+  @media (max-width: 1150px) {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  @media (max-width: 880px) {
+    padding-top: 140px;
+  }
+
+  @media (max-width: 682px) {
+    padding-top: 170px;
+  }
+
+  @media (max-width: 479px) {
+    padding-top: 80px;
+  }
+
+  .heroBox {
+    width: 100%;
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (max-width: 1150px) {
+      text-align: center;
+      align-items: center;
+    }
+
+    @media (max-width: 1150px) {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: 1600px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 1350px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 1150px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 2rem;
+      }
+
+      span {
+        color: var(--green);
+      }
+    }
+
+    .normalP {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+
+      @media (max-width: 1350px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .boldP {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .heroImg {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    object-fit: contain;
+  }
+}

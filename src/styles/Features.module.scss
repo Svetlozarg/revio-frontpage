@@ -1,0 +1,74 @@
+.features {
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/featuresBg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 6rem 1rem;
+
+  h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (max-width: 1600px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 1350px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
+  }
+
+  .featuresWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 6rem;
+
+    @media (max-width: 700px) {
+      padding: 0;
+    }
+  }
+
+  .buttonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    button {
+      padding: 10px 2rem;
+      color: #fff;
+      background-color: #000;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: 250ms ease-in-out;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: bold;
+
+      &:hover {
+        border: 3px solid #000;
+        background-color: transparent;
+        color: #000;
+      }
+    }
+  }
+}

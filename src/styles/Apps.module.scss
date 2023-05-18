@@ -1,0 +1,44 @@
+.apps {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+  padding: 6rem 1rem;
+
+  h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    @media (max-width: 1600px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 1350px) {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 700px) {
+      font-size: 2rem;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+}
