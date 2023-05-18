@@ -23,6 +23,8 @@ export default function Question(props: QuestionData) {
           }
           alt="plus image"
           onClick={() => setShowAnswer(!showAnswer)}
+          width="1000"
+          height="1000"
         />
       </div>
 

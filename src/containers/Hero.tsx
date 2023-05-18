@@ -25,6 +25,8 @@ export default function Hero() {
         className={styles.heroImg}
         alt="Hero Image"
         data-aos="fade-left"
+        width="1000"
+        height="1000"
       />
     </section>
   );

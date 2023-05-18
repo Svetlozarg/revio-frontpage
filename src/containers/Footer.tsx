@@ -14,12 +14,16 @@ export default function Footer() {
           className={styles.logo}
           src="https://ik.imagekit.io/obelussoft/Revio/logo-white_XSIdnlPSg.png?updatedAt=1684448815126"
           alt="revio logo"
+          width="1000"
+          height="1000"
         />
         <div className={styles.socialsBox}>
           <a href="https://www.linkedin.com/company/revio-app" target="_blank">
             <Image
               src="https://ik.imagekit.io/obelussoft/Revio/linkedin-icon_LveuKqXah.png?updatedAt=1684448815095"
               alt="icon"
+              width="1000"
+              height="1000"
             />
           </a>
 
@@ -30,6 +34,8 @@ export default function Footer() {
             <Image
               src="https://ik.imagekit.io/obelussoft/Revio/facebook-icon_8ADqE7dKw6.png?updatedAt=1684448813700"
               alt="icon"
+              width="1000"
+              height="1000"
             />
           </a>
         </div>
@@ -55,6 +61,8 @@ export default function Footer() {
           <Image
             src="https://ik.imagekit.io/obelussoft/Revio/eu-flag_LqA1Oa3bi.png?updatedAt=1684448813539"
             alt="flag"
+            width="1000"
+            height="1000"
           />
           <p> | © {currentYear} RevioApp Inc. | </p>
           <Link href="/privacy">Privacy</Link>

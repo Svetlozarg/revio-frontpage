@@ -23,6 +23,8 @@ export default function Header() {
           src="https://ik.imagekit.io/obelussoft/Revio/revio-logo_caDsNMNPw.png?updatedAt=1684448816397"
           alt="Revio Logo"
           className={styles.logo}
+          width="1000"
+          height="1000"
         />
       </Link>
 

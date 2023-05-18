@@ -12,7 +12,7 @@ export default function Feature(props: FeatureData) {
 
   return (
     <div className={styles.feature}>
-      <Image src={image} alt="feature image" />
+      <Image src={image} alt="feature image" width="1000" height="1000" />
       <h4>{title}</h4>
       <p>{body}</p>
     </div>

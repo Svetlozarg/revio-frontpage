@@ -27,6 +27,8 @@ export default function Input() {
         <Image
           src="https://ik.imagekit.io/obelussoft/Revio/shopify_SCLRkTJ7C.png?updatedAt=1684448816384"
           alt="shopify image"
+          width="1000"
+          height="1000"
         />
         <p>Instant Setup • 14 Day Free Trial</p>
       </div>

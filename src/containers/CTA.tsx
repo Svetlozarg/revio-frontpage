@@ -9,6 +9,8 @@ export default function CTA() {
         src="https://ik.imagekit.io/obelussoft/Revio/man_mzNxJ6dIf7.png?updatedAt=1684448815814"
         alt="man"
         data-aos="fade-right"
+        width="1000"
+        height="1000"
       />
       <div data-aos="fade-down">
         <h3>Take your</h3>

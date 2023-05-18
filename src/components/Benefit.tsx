@@ -18,7 +18,13 @@ export default function Benefit(props: BenefitData) {
       style={{ backgroundColor: dark ? "#000" : "var(--grey)" }}
     >
       {imageAlign === "left" && (
-        <Image src={image} alt="benefit image" data-aos="fade-right" />
+        <Image
+          src={image}
+          alt="benefit image"
+          data-aos="fade-right"
+          width="1000"
+          height="1000"
+        />
       )}
 
       <div data-aos="flip-left">
@@ -27,7 +33,13 @@ export default function Benefit(props: BenefitData) {
       </div>
 
       {imageAlign === "right" && (
-        <Image src={image} alt="benefit image" data-aos="fade-left" />
+        <Image
+          src={image}
+          alt="benefit image"
+          data-aos="fade-left"
+          width="1000"
+          height="1000"
+        />
       )}
     </section>
   );
