@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "@/styles/Question.module.scss";
-import plus from "../assets/plus.png";
-import minus from "../assets/minus.png";
+import plus from "../../public/assets/plus.png";
+import minus from "../../public/assets/minus.png";
 import Image from "next/image";
 
 export interface QuestionData {

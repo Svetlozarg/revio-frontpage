@@ -1,9 +1,9 @@
 import styles from "@/styles/Footer.module.scss";
 import Image from "next/image";
-import logo from "../assets/logo-white.png";
-import facebook from "../assets/facebook-icon.png";
-import linkedin from "../assets/linkedin-icon.png";
-import flag from "../assets/eu-flag.png";
+import logo from "../../public/assets/logo-white.png";
+import facebook from "../../public/assets/facebook-icon.png";
+import linkedin from "../../public/assets/linkedin-icon.png";
+import flag from "../../public/assets/eu-flag.png";
 import Link from "next/link";
 import { HeaderData, headerData } from "./Header";
 

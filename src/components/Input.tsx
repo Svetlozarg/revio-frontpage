@@ -1,6 +1,6 @@
 import styles from "@/styles/Input.module.scss";
 import Image from "next/image";
-import shopify from "../assets/shopify.png";
+import shopify from "../../public/assets/shopify.png";
 import { useState } from "react";
 import Popup from "./Popup";
 

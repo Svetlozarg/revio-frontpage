@@ -1,6 +1,6 @@
 import styles from "@/styles/Hero.module.scss";
 import Image from "next/image";
-import heroImg from "../assets/hero-img.png";
+import heroImg from "../../public/assets/hero-img.png";
 import Input from "@/components/Input";
 
 export default function Hero() {

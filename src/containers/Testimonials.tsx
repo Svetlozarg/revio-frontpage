@@ -1,6 +1,6 @@
 import Testimonial, { TestimonialData } from "@/components/Testimonial";
 import styles from "@/styles/Testimonials.module.scss";
-import userImg from "../assets/user.png";
+import userImg from "../../public/assets/user.png";
 
 const testimonialsData: Array<TestimonialData> = [
   {
