@@ -74,7 +74,7 @@ export default function Popup(props: Props) {
           <input
             type="text"
             name="store"
-            placeholder="Store name"
+            placeholder="yourstore.myshopify.com"
             onChange={handleStoreChange}
             required
             value={storeUrl}
