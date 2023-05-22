@@ -54,3 +54,61 @@
     }
   }
 }
+
+.benefitReverse {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: #fff;
+  padding: 6rem 10px;
+
+  @media (max-width: 1335px) {
+    justify-content: center;
+    text-align: center;
+    row-gap: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  div {
+    width: 100%;
+    max-width: 600px;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 1.2;
+
+      @media (max-width: 1600px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 1350px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 1150px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 700px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      line-height: 1.8;
+    }
+  }
+}

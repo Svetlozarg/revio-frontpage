@@ -14,8 +14,10 @@ export default function Benefit(props: BenefitData) {
 
   return (
     <section
-      className={styles.benefit}
-      style={{ backgroundColor: dark ? "#000" : "var(--grey)" }}
+      className={dark ? styles.benefit : styles.benefitReverse}
+      style={{
+        backgroundColor: dark ? "#000" : "var(--grey)",
+      }}
     >
       {imageAlign === "left" && (
         <Image

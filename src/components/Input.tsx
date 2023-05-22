@@ -19,7 +19,7 @@ export default function Input() {
         <input
           type="text"
           name="store"
-          placeholder="Store name"
+          placeholder="yourstore.myshopify.com"
           onChange={handleStoreChange}
           required
         />

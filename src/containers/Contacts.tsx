@@ -43,7 +43,7 @@ export default function Contacts() {
               required
             ></textarea>
             <button type="submit" className="btn btn-lg btn-dark btn-block">
-              Submit
+              Get in Touch
             </button>
           </form>
 
