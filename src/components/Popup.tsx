@@ -3,10 +3,11 @@ import { useState } from "react";
 
 interface Props {
   handleClose: any;
+  storeUrl: string;
 }
 
 export default function Popup(props: Props) {
-  const { handleClose } = props;
+  const { handleClose, storeUrl } = props;
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [store, setStore] = useState<string>("");
@@ -76,8 +77,8 @@ export default function Popup(props: Props) {
             placeholder="Store name"
             onChange={handleStoreChange}
             required
+            value={storeUrl}
           />
-          <span>.shopify.com</span>
         </div>
       </div>
 

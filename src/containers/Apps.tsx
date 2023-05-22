@@ -12,6 +12,7 @@ export default function Apps() {
           alt="app image"
           width="1000"
           height="1000"
+          className={styles.firstImg}
         />
         <Image
           src="https://ik.imagekit.io/obelussoft/Revio/judgeme_zQLhnKdkz.png?updatedAt=1684448815378"
@@ -36,6 +37,7 @@ export default function Apps() {
           alt="app image"
           width="1000"
           height="1000"
+          className={styles.lastImg}
         />
       </div>
     </section>

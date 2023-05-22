@@ -2,6 +2,8 @@ import styles from "@/styles/Footer.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { HeaderData, headerData } from "./Header";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   const currentDate = new Date();
@@ -24,6 +26,7 @@ export default function Footer() {
               alt="icon"
               width="1000"
               height="1000"
+              className={styles.linkedin}
             />
           </a>
 
@@ -36,6 +39,7 @@ export default function Footer() {
               alt="icon"
               width="1000"
               height="1000"
+              className={styles.facebook}
             />
           </a>
         </div>

@@ -1,0 +1,35 @@
+.privacy {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+
+  @media (max-width: 900px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (max-width: 1150px) {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  @media (max-width: 880px) {
+    padding-top: 140px;
+  }
+
+  @media (max-width: 682px) {
+    padding-top: 170px;
+  }
+
+  @media (max-width: 479px) {
+    padding-top: 80px;
+  }
+}

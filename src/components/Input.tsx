@@ -5,6 +5,9 @@ import Popup from "./Popup";
 
 export default function Input() {
   const [openPopup, setOpenPopup] = useState<boolean>(false);
+  const [store, setStore] = useState<string>("");
+
+  const handleStoreChange = (event: any) => setStore(event.target.value);
 
   const handleClose = () => {
     setOpenPopup(false);
@@ -14,10 +17,11 @@ export default function Input() {
     <div className={styles.input}>
       <div className={styles.inputStyle}>
         <input
-          placeholder="yourwebsite.shopify.com"
           type="text"
-          name=""
-          id=""
+          name="store"
+          placeholder="Store name"
+          onChange={handleStoreChange}
+          required
         />
 
         <button onClick={() => setOpenPopup(!openPopup)}>Get Now</button>
@@ -33,7 +37,7 @@ export default function Input() {
         <p>Instant Setup • 14 Day Free Trial</p>
       </div>
 
-      {openPopup && <Popup handleClose={handleClose} />}
+      {openPopup && <Popup storeUrl={store} handleClose={handleClose} />}
     </div>
   );
 }

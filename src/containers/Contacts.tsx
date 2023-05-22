@@ -53,14 +53,14 @@ export default function Contacts() {
               href="https://www.linkedin.com/company/revio-app"
               target="_blank"
             >
-              <FaFacebook /> Linkedin
+              <FaFacebook className={styles.facebook} /> Linkedin
             </a>
 
             <a
               href="https://www.facebook.com/revioappforecommerce"
               target="_blank"
             >
-              <FaLinkedin /> Facebook
+              <FaLinkedin className={styles.linkedin} /> Facebook
             </a>
           </div>
         </div>

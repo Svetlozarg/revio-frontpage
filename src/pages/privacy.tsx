@@ -1,8 +1,8 @@
 import Layout from "@/containers/Layout";
+import Privacy from "@/containers/Privacy";
 import Head from "next/head";
-import Hero from "@/containers/Hero";
 
-export default function Privacy() {
+export default function PrivacyPage() {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Privacy() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Hero />
+        <Privacy />
       </Layout>
     </>
   );

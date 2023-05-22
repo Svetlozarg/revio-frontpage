@@ -4,27 +4,27 @@ import styles from "@/styles/Testimonials.module.scss";
 const testimonialsData: Array<TestimonialData> = [
   {
     testimonial:
-      "Revio Integrates all the messaging 😎 👍 channels, including WhatsApp, Viber, Messenger into one place to provide efficient customer support in real-time. Connect your Shopify stores and synchronize all your customer information. Show purchase history and order status alongside the chat room.",
+      "As an E-commerce expert with over a decade in the field, I've witnessed numerous tools promising to revolutionize customer interaction. However, Revio, quite honestly, takes the cake. The manner in which it integrates with conversational commerce platforms is ingenious, facilitating real-time, authentic customer feedback that’s incredibly valuable for businesses. The ability to gain insights directly from customers not only elevates service levels but also fosters an environment of trust. I'm truly impressed.",
     image:
       "https://ik.imagekit.io/obelussoft/Revio/user_Oq1tGw3F0.png?updatedAt=1684448816472",
-    name: "Jonathan Doe",
-    slogan: "Marketing Manager at Company Corp.",
+    name: "Emma Sullivan",
+    slogan: "E-commerce Consultant",
   },
   {
     testimonial:
-      "Revio Integrates all the messaging 😎 👍 channels, including WhatsApp, Viber, Messenger into one place to provide efficient customer support in real-time. Connect your Shopify stores and synchronize all your customer information. Show purchase history and order status alongside the chat room.",
+      "In an era where customer experience is king, Revio emerges as a game-changer. The impact it's made in the e-commerce industry is hard to ignore. It transforms mere transactions into meaningful conversations, creating a personalized shopping experience that today's customers crave. With Revio, you're not just selling products; you're building relationships. An essential tool for anyone in E-commerce.",
     image:
       "https://ik.imagekit.io/obelussoft/Revio/user_Oq1tGw3F0.png?updatedAt=1684448816472",
-    name: "Jonathan Doe",
-    slogan: "Marketing Manager at Company Corp.",
+    name: "James Burton",
+    slogan: "Digital Marketing Strategist",
   },
   {
     testimonial:
-      "Revio Integrates all the messaging 😎 👍 channels, including WhatsApp, Viber, Messenger into one place to provide efficient customer support in real-time. Connect your Shopify stores and synchronize all your customer information. Show purchase history and order status alongside the chat room.",
+      "I can't stress enough the importance of authentic customer reviews in E-commerce. They boost credibility,SEO, and most importantly, influence purchase decisions and conversion rates. Revio, with its seamless integration into shopify takes this a step further. It’s not just about gathering reviews; it’s about starting a dialogue, understanding customers better, and making them feel heard. Revio isn't just a tool, it's a strategy for success.",
     image:
       "https://ik.imagekit.io/obelussoft/Revio/user_Oq1tGw3F0.png?updatedAt=1684448816472",
-    name: "Jonathan Doe",
-    slogan: "Marketing Manager at Company Corp.",
+    name: "Lisa R. McKinney",
+    slogan: "CRO expert",
   },
 ];
 

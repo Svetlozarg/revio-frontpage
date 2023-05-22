@@ -1,8 +1,8 @@
 import Layout from "@/containers/Layout";
+import Terms from "@/containers/Terms";
 import Head from "next/head";
-import Hero from "@/containers/Hero";
 
-export default function Terms() {
+export default function TermsPage() {
   return (
     <>
       <Head>
@@ -12,7 +12,7 @@ export default function Terms() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Hero />
+        <Terms />
       </Layout>
     </>
   );

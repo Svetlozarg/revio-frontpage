@@ -28,7 +28,7 @@
     }
 
     .logo {
-      width: 250px;
+      width: 200px;
       height: auto;
       object-fit: contain;
     }
@@ -43,6 +43,16 @@
         width: 40px;
         height: auto;
         object-fit: contain;
+      }
+
+      .facebook {
+        color: #3b5998;
+        font-size: 3rem;
+      }
+
+      .linkedin {
+        color: #0072b1;
+        font-size: 3rem;
       }
     }
   }

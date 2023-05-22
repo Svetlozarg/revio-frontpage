@@ -13,7 +13,7 @@ export default function Testimonial(props: TestimonialData) {
 
   return (
     <div className={styles.testimonial}>
-      <p>{testimonial}</p>
+      <p className={styles.testimonialText}>{testimonial}</p>
 
       <Image src={image} alt="user image" width="1000" height="1000" />
 

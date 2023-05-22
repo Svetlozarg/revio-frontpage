@@ -12,7 +12,10 @@ export default function Question(props: QuestionData) {
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
 
   return (
-    <div className={styles.questionBox}>
+    <div
+      className={styles.questionBox}
+      onClick={() => setShowAnswer(!showAnswer)}
+    >
       <div className={styles.question}>
         <h4>{question}</h4>
         <Image
@@ -22,7 +25,6 @@ export default function Question(props: QuestionData) {
               : "https://ik.imagekit.io/obelussoft/Revio/plus_MRHTpIWCj.png?updatedAt=1684448816307"
           }
           alt="plus image"
-          onClick={() => setShowAnswer(!showAnswer)}
           width="1000"
           height="1000"
         />

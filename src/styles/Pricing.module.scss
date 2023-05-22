@@ -1,11 +1,12 @@
 .pricing {
-  width: 100%;
+  width: 80%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 120px;
   background-color: #fff;
+  margin: 0 auto;
 
   @media (max-width: 1150px) {
     flex-wrap: wrap;
@@ -85,7 +86,7 @@
       }
 
       tr.priceTableHead {
-        background-color: var(--green);
+        background-color: var(--yellow);
         color: #ffffff;
       }
 
@@ -97,7 +98,7 @@
       }
 
       td.price a {
-        background-color: var(--green);
+        background-color: var(--yellow);
         color: #ffffff;
         padding: 12px 32px;
         margin-top: 16px;
@@ -114,8 +115,8 @@
 
       td.price a:hover {
         background-color: transparent;
-        color: var(--green);
-        border: 2px solid var(--green);
+        color: var(--yellow);
+        border: 2px solid var(--yellow);
       }
 
       td.priceTablePopular {

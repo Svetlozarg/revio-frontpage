@@ -61,7 +61,9 @@ export default function Features() {
       </div>
 
       <div className={styles.buttonWrapper} data-aos="flip-up">
-        <button>Get a free trial</button>
+        <a href="#">
+          <button>Get a free trial</button>
+        </a>
       </div>
     </section>
   );

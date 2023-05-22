@@ -14,7 +14,10 @@ export default function About() {
           e-commerce brands must be closer to their customers, strengthening
           every touchpoint along the way. The future will distinguish strong
           brands from weak ones through{" "}
-          <span>AI algorithms and micro-personalization</span>.
+          <span className={styles.yellow}>
+            AI algorithms and micro-personalization
+          </span>
+          .
         </p>
 
         <p data-aos="fade-right">
@@ -29,8 +32,8 @@ export default function About() {
         </p>
 
         <p className={styles.boldP} data-aos="fade-right">
-          Try <span>Revio</span> today and be of the <span>winners</span>{" "}
-          tomorrow!
+          Try <span className={styles.yellow}>Revio</span> today and be of the{" "}
+          <span>winners</span> tomorrow!
         </p>
       </div>
     </section>
