@@ -133,6 +133,22 @@ export default function Popup(props: Props) {
             </div>
           </div>
 
+          <div className={styles.agreeBox}>
+            <div>
+              <input type="checkbox" required />
+              <p>
+                I agree to receive updates and insights around conversational
+                commerce and marketing topics.
+              </p>
+            </div>
+
+            <p>
+              By submitting, you agree that revio can use this data to send you
+              the content requested. You can unsubscribe from these
+              communications at any time. See our privacy policy for more.
+            </p>
+          </div>
+
           <button onClick={handleSend}>Send</button>
 
           <span className={styles.error}>{error && error}</span>
