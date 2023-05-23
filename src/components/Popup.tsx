@@ -1,5 +1,6 @@
-import styles from "@/styles/Popup.module.scss";
 import { useState } from "react";
+import styles from "@/styles/Popup.module.scss";
+import Airtable from "airtable";
 
 interface Props {
   handleClose: any;
@@ -8,6 +9,9 @@ interface Props {
 
 export default function Popup(props: Props) {
   const { handleClose, storeUrl } = props;
+  const base = new Airtable({ apiKey: "keybFLPb1PL5J8uKa" }).base(
+    "appwSyWxUemZFCGAK"
+  );
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [store, setStore] = useState<string>("");
@@ -16,6 +20,28 @@ export default function Popup(props: Props) {
   const handleNameChange = (event: any) => setName(event.target.value);
   const handleEmailChange = (event: any) => setEmail(event.target.value);
   const handleStoreChange = (event: any) => setStore(event.target.value);
+
+  const handleFormSubmit = async (
+    name: string,
+    email: string,
+    store: string
+  ) => {
+    try {
+      await base("tblj8X4QuLBtY6ZKd").create([
+        {
+          fields: {
+            Name: name,
+            Email: email,
+            "Store URL": store,
+          },
+        },
+      ]);
+
+      console.log("Form submitted successfully!");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
 
   const handleSend = () => {
     if (!name) {
@@ -39,6 +65,7 @@ export default function Popup(props: Props) {
 
     if (name && email && store) {
       setError("");
+      handleFormSubmit(name, email, store);
     }
   };
 
@@ -64,7 +91,7 @@ export default function Popup(props: Props) {
         <input
           type="email"
           name="email"
-          placeholder="Your email address"
+          placeholder="Your business email"
           onChange={handleEmailChange}
           required
         />
@@ -77,7 +104,7 @@ export default function Popup(props: Props) {
             placeholder="yourstore.myshopify.com"
             onChange={handleStoreChange}
             required
-            value={storeUrl}
+            value={storeUrl ? storeUrl : undefined}
           />
         </div>
       </div>
