@@ -83,7 +83,21 @@ export default function Popup(props: Props) {
 
       <h4>Be the first to get notified when Revio is released</h4>
 
-      <Countdown />
+      <div>
+        <Countdown />
+
+        <p
+          style={{
+            fontSize: "1rem",
+            textAlign: "center",
+            width: "90%",
+            margin: "1rem auto 0 auto",
+          }}
+        >
+          Anyone who subscribes to our waiting list will receive a special offer
+          on June 5th.
+        </p>
+      </div>
 
       {!successfullySent && (
         <>

@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 600px;
-  height: 600px;
+  height: 650px;
   background-color: var(--grey);
   box-shadow: 24;
   padding: 3rem 2rem;
@@ -20,7 +20,7 @@
   border: 2px solid var(--green);
 
   @media (max-width: 400px) {
-    height: 700px;
+    height: 750px;
   }
 
   .closeIcon {
