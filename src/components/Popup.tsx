@@ -14,8 +14,9 @@ export default function Popup(props: Props) {
   );
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [store, setStore] = useState<string>("");
+  const [store, setStore] = useState<string>(storeUrl);
   const [error, setError] = useState<string>("");
+  const [successfullySent, setSuccessfullySent] = useState<boolean>(false);
 
   const handleNameChange = (event: any) => setName(event.target.value);
   const handleEmailChange = (event: any) => setEmail(event.target.value);
@@ -66,6 +67,10 @@ export default function Popup(props: Props) {
     if (name && email && store) {
       setError("");
       handleFormSubmit(name, email, store);
+      setSuccessfullySent(true);
+      setTimeout(() => {
+        handleClose();
+      }, 1500);
     }
   };
 
@@ -77,41 +82,53 @@ export default function Popup(props: Props) {
 
       <h4>Be the first to get notified when Revio is released</h4>
 
-      <div className={styles.inputWrapper}>
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your name"
-          onChange={handleNameChange}
-          required
-        />
+      {!successfullySent && (
+        <>
+          <div className={styles.inputWrapper}>
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              onChange={handleNameChange}
+              required
+            />
 
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Your business email"
-          onChange={handleEmailChange}
-          required
-        />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your business email"
+              onChange={handleEmailChange}
+              required
+            />
 
-        <label htmlFor="name">Store url</label>
-        <div className={styles.inputBox}>
-          <input
-            type="text"
-            name="store"
-            placeholder="yourstore.myshopify.com"
-            onChange={handleStoreChange}
-            required
-            value={storeUrl ? storeUrl : undefined}
-          />
-        </div>
-      </div>
+            <label htmlFor="name">Store url</label>
+            <div className={styles.inputBox}>
+              <input
+                type="text"
+                name="store"
+                placeholder="yourstore.myshopify.com"
+                onChange={handleStoreChange}
+                value={store}
+                required
+              />
+            </div>
+          </div>
 
-      <button onClick={handleSend}>Send</button>
+          <button onClick={handleSend}>Send</button>
 
-      <span className={styles.error}>{error && error}</span>
+          <span className={styles.error}>{error && error}</span>
+        </>
+      )}
+
+      {successfullySent && (
+        <>
+          <div className={styles.successfullySent}>
+            <h4>Thank you for your submission!</h4>
+          </div>
+        </>
+      )}
     </div>
   );
 }
