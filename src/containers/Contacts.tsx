@@ -14,6 +14,7 @@ export default function Contacts() {
             data-aos="fade-right"
           >
             <h2>Contact Us</h2>
+
             <input
               type="text"
               name="name"
@@ -21,6 +22,7 @@ export default function Contacts() {
               placeholder="Full Name"
               required
             />
+
             <input
               type="email"
               name="Email"
@@ -28,6 +30,7 @@ export default function Contacts() {
               placeholder="Email Address"
               required
             />
+
             <input
               type="phone"
               name="phone"
@@ -35,6 +38,7 @@ export default function Contacts() {
               placeholder="Phone Number"
               required
             />
+
             <textarea
               placeholder="Your Message"
               className="form-control"
@@ -42,6 +46,22 @@ export default function Contacts() {
               rows={10}
               required
             ></textarea>
+
+            <div className={styles.agreeBox}>
+              <div>
+                <input type="checkbox" required />
+                <p>
+                  I agree to receive updates and insights around conversational
+                  commerce and marketing topics.
+                </p>
+              </div>
+
+              <p>
+                By submitting, you agree that revio can use this data to send
+                you the content requested. You can unsubscribe from these
+                communications at any time. See our privacy policy for more.
+              </p>
+            </div>
             <button type="submit" className="btn btn-lg btn-dark btn-block">
               Get in Touch
             </button>

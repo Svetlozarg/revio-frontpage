@@ -151,6 +151,31 @@
           font-size: 3rem;
         }
       }
+
+      .agreeBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 5px;
+          margin-bottom: 1rem;
+
+          input {
+            width: 15px;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: grey;
+        }
+      }
     }
   }
 }
