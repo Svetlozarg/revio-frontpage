@@ -135,7 +135,7 @@ export default function Popup(props: Props) {
 
           <div className={styles.agreeBox}>
             <div>
-              <input type="checkbox" required />
+              <input type="checkbox" />
               <p>
                 I agree to receive updates and insights around conversational
                 commerce and marketing topics.

@@ -49,7 +49,7 @@ export default function Contacts() {
 
             <div className={styles.agreeBox}>
               <div>
-                <input type="checkbox" required />
+                <input type="checkbox" />
                 <p>
                   I agree to receive updates and insights around conversational
                   commerce and marketing topics.
