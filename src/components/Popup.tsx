@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "@/styles/Popup.module.scss";
 import Airtable from "airtable";
+import Countdown from "./Countdown";
 
 interface Props {
   handleClose: any;
@@ -81,6 +82,8 @@ export default function Popup(props: Props) {
       </p>
 
       <h4>Be the first to get notified when Revio is released</h4>
+
+      <Countdown />
 
       {!successfullySent && (
         <>
