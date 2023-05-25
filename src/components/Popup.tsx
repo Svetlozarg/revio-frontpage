@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "@/styles/Popup.module.scss";
 import Airtable from "airtable";
 import Countdown from "./Countdown";
+import Link from "next/link";
 
 interface Props {
   handleClose: any;
@@ -145,7 +146,14 @@ export default function Popup(props: Props) {
             <p>
               By submitting, you agree that revio can use this data to send you
               the content requested. You can unsubscribe from these
-              communications at any time. See our privacy policy for more.
+              communications at any time. See our{" "}
+              <Link
+                style={{ color: "#fff", textDecoration: "none" }}
+                href="/privacy"
+              >
+                privacy policy
+              </Link>{" "}
+              for more.
             </p>
           </div>
 
