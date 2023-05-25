@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "@/styles/Popup.module.scss";
 import Airtable from "airtable";
 import Countdown from "./Countdown";
@@ -135,7 +135,7 @@ export default function Popup(props: Props) {
 
           <div className={styles.agreeBox}>
             <div>
-              <input type="checkbox" />
+              <input className={styles.checkbox} type="checkbox" />
               <p>
                 I agree to receive updates and insights around conversational
                 commerce and marketing topics.

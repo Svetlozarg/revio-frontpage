@@ -140,6 +140,10 @@
 
       input {
         width: 15px;
+
+        @media (max-width: 574px) {
+          width: auto;
+        }
       }
     }
 
