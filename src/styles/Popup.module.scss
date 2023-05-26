@@ -158,9 +158,12 @@
       margin-bottom: 1rem;
 
       input {
-        transform: scale(1.5);
         border: 0;
         outline: none;
+
+        @media (max-width: 600px) {
+          transform: scale(2.5);
+        }
       }
     }
 
