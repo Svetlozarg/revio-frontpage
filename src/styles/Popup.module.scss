@@ -156,6 +156,12 @@
       align-items: flex-start;
       gap: 10px;
       margin-bottom: 1rem;
+
+      input {
+        transform: scale(1.5);
+        border: 0;
+        outline: none;
+      }
     }
 
     p {
