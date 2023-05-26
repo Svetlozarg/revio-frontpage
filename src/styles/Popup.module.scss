@@ -21,16 +21,23 @@
     height: 100%;
   }
 
+  @media (max-width: 900px) {
+    padding: 2rem 3rem;
+  }
+
   @media (max-width: 880px) {
-    padding-top: 140px;
+    margin-top: 140px;
+    min-height: calc(100vh - 140px);
   }
 
   @media (max-width: 682px) {
-    padding-top: 170px;
+    margin-top: 170px;
+    min-height: calc(100vh - 170px);
   }
 
   @media (max-width: 479px) {
-    padding-top: 80px;
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
   }
 
   .closeIcon {
