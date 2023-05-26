@@ -2,6 +2,7 @@ import styles from "@/styles/Input.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import Popup from "./Popup";
+import Link from "next/link";
 
 export default function Input() {
   const [openPopup, setOpenPopup] = useState<boolean>(false);
@@ -24,7 +25,9 @@ export default function Input() {
           required
         />
 
-        <button onClick={() => setOpenPopup(!openPopup)}>Get Now</button>
+        <Link href="/signup">
+          <button>Get Now</button>
+        </Link>
       </div>
 
       <div className={styles.inputBox}>
@@ -37,7 +40,7 @@ export default function Input() {
         <p>Instant Setup • 14 Day Free Trial</p>
       </div>
 
-      {openPopup && <Popup storeUrl={store} handleClose={handleClose} />}
+      {/* {openPopup && <Popup storeUrl={store} handleClose={handleClose} />} */}
     </div>
   );
 }

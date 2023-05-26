@@ -4,19 +4,13 @@ import Airtable from "airtable";
 import Countdown from "./Countdown";
 import Link from "next/link";
 
-interface Props {
-  handleClose: any;
-  storeUrl: string;
-}
-
-export default function Popup(props: Props) {
-  const { handleClose, storeUrl } = props;
+export default function Popup() {
   const base = new Airtable({ apiKey: "keybFLPb1PL5J8uKa" }).base(
     "appwSyWxUemZFCGAK"
   );
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [store, setStore] = useState<string>(storeUrl);
+  const [store, setStore] = useState<string>("");
   const [error, setError] = useState<string>("");
   const [successfullySent, setSuccessfullySent] = useState<boolean>(false);
 
@@ -70,18 +64,11 @@ export default function Popup(props: Props) {
       setError("");
       handleFormSubmit(name, email, store);
       setSuccessfullySent(true);
-      setTimeout(() => {
-        handleClose();
-      }, 1500);
     }
   };
 
   return (
     <div className={styles.popup}>
-      <p className={styles.closeIcon} title="Close" onClick={handleClose}>
-        X
-      </p>
-
       <h4>Be the first to get notified when Revio is released</h4>
 
       <div>
