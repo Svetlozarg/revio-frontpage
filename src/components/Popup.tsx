@@ -122,8 +122,8 @@ export default function Popup() {
           </div>
 
           <div className={styles.agreeBox}>
-            <input className={styles.checkbox} type="checkbox" />
             <div>
+              <input className={styles.checkbox} type="checkbox" />
               <p>
                 I agree to receive updates and insights around conversational
                 commerce and marketing topics.

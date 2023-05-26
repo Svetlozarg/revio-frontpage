@@ -145,15 +145,16 @@
     width: 100%;
     max-width: 880px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
 
     div {
+      width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 5px;
+      gap: 10px;
       margin-bottom: 1rem;
 
       input {
