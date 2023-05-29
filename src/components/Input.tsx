@@ -17,17 +17,13 @@ export default function Input() {
   return (
     <div className={styles.input}>
       <div className={styles.inputStyle}>
-        <input
+        {/* <input
           type="text"
           name="store"
           placeholder="Your Business Email"
           onChange={handleStoreChange}
           required
-        />
-
-        <Link href="/signup">
-          <button>Get Early Access</button>
-        </Link>
+        /> */}
       </div>
 
       <div className={styles.inputBox}>
@@ -37,8 +33,13 @@ export default function Input() {
           width="1000"
           height="1000"
         />
-        <p>Instant Setup • 14 Day Free Trial</p>
+
+        <Link href="/signup">
+          <button>Get Early Access</button>
+        </Link>
       </div>
+
+      <p>Instant Setup • 14 Day Free Trial</p>
 
       {/* {openPopup && <Popup storeUrl={store} handleClose={handleClose} />} */}
     </div>
