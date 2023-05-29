@@ -150,10 +150,12 @@
       align-items: flex-start;
       gap: 10px;
       margin-bottom: 1rem;
+      flex: 0 16px;
 
       input {
         border: 0;
         outline: none;
+        min-width: 28px;
       }
     }
 
