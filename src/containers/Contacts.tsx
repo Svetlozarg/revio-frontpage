@@ -1,4 +1,5 @@
 import styles from "@/styles/Contacts.module.scss";
+import Link from "next/link";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -49,7 +50,7 @@ export default function Contacts() {
 
             <div className={styles.agreeBox}>
               <div>
-                <input type="checkbox" />
+                <input className={styles.checkbox} type="checkbox" />
                 <p>
                   I agree to receive updates and insights around conversational
                   commerce and marketing topics.
@@ -59,7 +60,14 @@ export default function Contacts() {
               <p>
                 By submitting, you agree that revio can use this data to send
                 you the content requested. You can unsubscribe from these
-                communications at any time. See our privacy policy for more.
+                communications at any time. See our{" "}
+                <Link
+                  style={{ color: "#5ab959", textDecoration: "none" }}
+                  href="/privacy"
+                >
+                  privacy policy
+                </Link>{" "}
+                for more.
               </p>
             </div>
             <button type="submit" className="btn btn-lg btn-dark btn-block">
