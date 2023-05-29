@@ -68,11 +68,6 @@ const Countdown = () => {
           </li>
         </ul>
       </div>
-      <div id="content" className={styles.emoji}>
-        <span>🥳</span>
-        <span>🎉</span>
-        <span>🎂</span>
-      </div>
     </div>
   );
 };
