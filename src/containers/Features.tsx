@@ -1,5 +1,6 @@
 import Feature, { FeatureData } from "@/components/Feature";
 import styles from "@/styles/Features.module.scss";
+import Link from "next/link";
 
 const featuresData: Array<FeatureData> = [
   {
@@ -60,10 +61,10 @@ export default function Features() {
         })}
       </div>
 
-      <div className={styles.buttonWrapper} data-aos="flip-up">
-        <a href="#">
-          <button>Get a free trial</button>
-        </a>
+      <div className={styles.buttonWrapper}>
+        <Link href="/signup">
+          <button>Get early access</button>
+        </Link>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import styles from "@/styles/Popup.module.scss";
 import Airtable from "airtable";
 import Countdown from "./Countdown";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Popup() {
   const base = new Airtable({ apiKey: "keybFLPb1PL5J8uKa" }).base(
@@ -69,6 +70,16 @@ export default function Popup() {
 
   return (
     <div className={styles.popup}>
+      <Link href="/">
+        <Image
+          src="https://ik.imagekit.io/obelussoft/Revio/revio_logo-light_yc8XoC62e.png?updatedAt=1685350741045"
+          alt="Revio Logo"
+          className={styles.logo}
+          width="1000"
+          height="1000"
+        />
+      </Link>
+
       <h4>Be the first to get notified when Revio is released</h4>
 
       <div>
@@ -135,7 +146,7 @@ export default function Popup() {
               the content requested. You can unsubscribe from these
               communications at any time. See our{" "}
               <Link
-                style={{ color: "#fff", textDecoration: "none" }}
+                style={{ color: "#5ab959", textDecoration: "none" }}
                 href="/privacy"
               >
                 privacy policy

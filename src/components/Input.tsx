@@ -20,13 +20,13 @@ export default function Input() {
         <input
           type="text"
           name="store"
-          placeholder="yourstore.myshopify.com"
+          placeholder="Your Business Email"
           onChange={handleStoreChange}
           required
         />
 
         <Link href="/signup">
-          <button>Get Now</button>
+          <button>Get Early Access</button>
         </Link>
       </div>
 
