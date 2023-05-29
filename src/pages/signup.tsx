@@ -9,7 +9,7 @@ export default function SignUpPage() {
     <>
       <Head>
         <title>Revio | Get Early Access</title>
-        <meta name="description" content="Revio | Privacy Terms" />
+        <meta name="description" content="Revio | Get Early Access" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
