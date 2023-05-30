@@ -72,7 +72,7 @@ export default function Popup() {
     <div className={styles.popup}>
       <Link href="/">
         <Image
-          src="https://ik.imagekit.io/obelussoft/Revio/revio_logo-light_yc8XoC62e.png?updatedAt=1685350741045"
+          src="https://ik.imagekit.io/obelussoft/Revio_Dashboard/RevioApp-Negative_Logo-raster_k-W-Inr-L.png?updatedAt=1685438250829"
           alt="Revio Logo"
           className={styles.logo}
           width="1000"
