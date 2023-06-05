@@ -94,7 +94,7 @@ export default function Popup() {
           }}
         >
           Anyone who subscribes to our waiting list will receive a special offer
-          on June 5th.
+          on June 10th.
         </p>
       </div>
 
