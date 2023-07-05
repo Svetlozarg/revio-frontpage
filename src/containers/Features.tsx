@@ -63,7 +63,7 @@ export default function Features() {
 
       <div className={styles.buttonWrapper}>
         <Link href="/signup">
-          <button>Get early access</button>
+          <button>Get a Demo</button>
         </Link>
       </div>
     </section>

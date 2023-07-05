@@ -80,21 +80,24 @@ export default function Popup() {
         />
       </Link>
 
-      <h4>Be the first to get notified when Revio is released</h4>
+      <h4>
+        We&apos;ll share the best use cases of WhatsApp for your brand and show
+        you around our platform in a 15-minute demo.
+      </h4>
 
       <div>
-        <Countdown />
+        {/* <Countdown /> */}
 
         <p
           style={{
-            fontSize: "1rem",
+            fontSize: "1.2rem",
             textAlign: "center",
             width: "90%",
             margin: "1rem auto 0 auto",
           }}
         >
-          Anyone who subscribes to our waiting list will receive a special offer
-          on June 10th.
+          Anyone who subscribes to our waiting list will receive a free WhatsApp
+          credits
         </p>
       </div>
 

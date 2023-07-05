@@ -35,7 +35,7 @@ export default function Input() {
         />
 
         <Link href="/signup">
-          <button>Get Early Access</button>
+          <button>Get a Demo</button>
         </Link>
       </div>
 
