@@ -5,14 +5,14 @@ import { FaCheck } from "react-icons/fa";
 export default function Pricing() {
   return (
     <section className={styles.pricing}>
-      <div className={styles.main}>
+      <div className={styles.main} style={{ paddingBottom: "2rem" }}>
         <table className={styles.priceTable}>
           <tbody>
             <tr>
               <td className={styles.priceBlank}></td>
               <td className={styles.priceBlank}></td>
-              <td className={styles.priceBlank}></td>
               <td className={styles.priceTablePopular}>Most popular</td>
+              <td className={styles.priceBlank}></td>
               <td className={styles.priceBlank}></td>
             </tr>
             <tr className={styles.priceTableHead}>
@@ -52,25 +52,49 @@ export default function Pricing() {
                 <br />
                 $29
                 <br />
+                <a
+                  href="https://developers.facebook.com/docs/whatsapp/pricing"
+                  target="_blank"
+                >
+                  + Additional WhatsApp <br /> conversations charges
+                </a>
               </td>
               <td className={styles.price}>
                 <br />
                 $119
                 <br />
+                <a
+                  href="https://developers.facebook.com/docs/whatsapp/pricing"
+                  target="_blank"
+                >
+                  + Additional WhatsApp <br /> conversations charges
+                </a>
               </td>
               <td className={styles.price}>
                 <br />
                 $299
                 <br />
+                <a
+                  href="https://developers.facebook.com/docs/whatsapp/pricing"
+                  target="_blank"
+                >
+                  + Additional WhatsApp <br /> conversations charges
+                </a>
               </td>
               <td className={styles.price}>
                 <br />
                 $799+
                 <br />
+                <a
+                  href="https://developers.facebook.com/docs/whatsapp/pricing"
+                  target="_blank"
+                >
+                  + Additional WhatsApp <br /> conversations charges
+                </a>
               </td>
             </tr>
             <tr>
-              <td>Free WA conversations</td>
+              <td>Free WA service conversations</td>
               <td>1000/month</td>
               <td>1000/month</td>
               <td>1000/month</td>
@@ -118,7 +142,7 @@ export default function Pricing() {
               </td>
             </tr>
             <tr>
-              <td>WA Shipping Notification</td>
+              <td>Photo & Video reviews</td>
               <td>
                 <FaCheck className={styles.faCheck} />
               </td>
@@ -163,7 +187,7 @@ export default function Pricing() {
               </td>
             </tr>
             <tr>
-              <td>Cross Selling (Product Recommendation)</td>
+              <td>AI generated WA templates</td>
               <td>
                 <FaCheck className={styles.faCheck} />
               </td>
@@ -198,7 +222,7 @@ export default function Pricing() {
                 <FaTimes className={styles.faTimes} />
               </td>
               <td>
-                <FaTimes className={styles.faTimes} />
+                <FaCheck className={styles.faCheck} />
               </td>
               <td>
                 <FaCheck className={styles.faCheck} />
@@ -231,36 +255,6 @@ export default function Pricing() {
                 }}
               >
                 Omnichannel Support
-              </td>
-            </tr>
-            <tr>
-              <td>Facebook Channel</td>
-              <td>
-                <FaTimes className={styles.faTimes} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
-              </td>
-            </tr>
-            <tr>
-              <td>Instagram DM Channel</td>
-              <td>
-                <FaTimes className={styles.faTimes} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
-              </td>
-              <td>
-                <FaCheck className={styles.faCheck} />
               </td>
             </tr>
             <tr>
@@ -421,21 +415,6 @@ export default function Pricing() {
               </td>
               <td>
                 <FaCheck className={styles.faCheck} />
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td className={styles.price}>
-                <a href="#">Get started</a>
-              </td>
-              <td className={styles.price}>
-                <a href="#">Get started</a>
-              </td>
-              <td className={styles.price}>
-                <a href="#">Get started</a>
-              </td>
-              <td className={styles.price}>
-                <a href="#">Get started</a>
               </td>
             </tr>
           </tbody>

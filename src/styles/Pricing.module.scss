@@ -70,11 +70,11 @@
         color: #d8d6e3;
       }
 
-      tr:nth-child(2n) td:nth-child(4) {
+      tr:nth-child(2n) td:nth-child(3) {
         background-color: rgba(216, 214, 227, 0.25);
       }
 
-      tr td:nth-child(4) {
+      tr td:nth-child(3) {
         background-color: rgba(216, 214, 227, 0.15);
         padding: 8px 48px;
       }
@@ -98,25 +98,17 @@
       }
 
       td.price a {
-        background-color: var(--yellow);
-        color: #ffffff;
-        padding: 12px 32px;
-        margin-top: 16px;
-        font-size: 0.8rem;
-        font-weight: 600;
-
-        text-transform: uppercase;
-        display: inline-block;
-        border-radius: 64px;
+        font-size: 0.75rem;
+        font-weight: normal;
+        font-style: italic;
+        color: gray;
         text-decoration: none;
-        border: 2px solid transparent;
-        transition: 250ms ease-in-out;
+        display: block;
+        margin-top: 10px;
       }
 
       td.price a:hover {
-        background-color: transparent;
-        color: var(--yellow);
-        border: 2px solid var(--yellow);
+        text-decoration: underline;
       }
 
       td.priceTablePopular {
