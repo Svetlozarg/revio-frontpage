@@ -9,8 +9,8 @@ export interface HeaderData {
 
 export const headerData: Array<HeaderData> = [
   { text: "Home", link: "/" },
-  // { text: "Pricing", link: "/pricing" },
   { text: "About Us", link: "/about" },
+  { text: "Pricing", link: "/pricing" },
   // { text: "Blog", link: "/blog" },
   { text: "Contacts", link: "/contacts" },
 ];
