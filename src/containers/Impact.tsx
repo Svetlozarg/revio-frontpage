@@ -17,7 +17,7 @@ const elipseData: Array<ElipseData> = [
   },
   {
     value: "3x",
-    text: "Reteined customers",
+    text: "Retained customers",
   },
   {
     value: "25%",
