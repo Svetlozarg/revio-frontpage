@@ -34,8 +34,8 @@ export default function Input() {
           height="1000"
         />
 
-        <Link href="/signup">
-          <button>Get a Demo</button>
+        <Link href="https://apps.shopify.com/revio" target="_blank">
+          <button>Try Now</button>
         </Link>
       </div>
 

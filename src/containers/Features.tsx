@@ -62,8 +62,8 @@ export default function Features() {
       </div>
 
       <div className={styles.buttonWrapper}>
-        <Link href="/signup">
-          <button>Get a Demo</button>
+        <Link href="https://apps.shopify.com/revio" target="_blank">
+          <button>Try Now</button>
         </Link>
       </div>
     </section>
